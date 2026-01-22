@@ -24,11 +24,13 @@ function Contacts() {
           
           {/* Contact Info */}
           <div className="space-y-4 text-gray-700">
+           <p className='font-bold text-sm italic text-blue-500 mt-3'>Info</p>
             <p><span className="font-semibold text-blue-600"></span><span className='flex items-center text-blue-700 font-semibold gap-1 text-sm'><MdOutlineMailOutline />smuchuku7@gmail.com</span> </p>
-           <p ><span className="font-semibold text-blue-600"></span ><span className='flex items-center text-blue-700 font-semibold gap-1 text-sm'><CiPhone /> +254 795629 534</span></p>
+           <p ><span className="font-semibold text-blue-600"></span ><span className='flex items-center text-blue-700 font-semibold gap-1 text-sm'><CiPhone /> +254 795 629 534</span></p>
             <p ><span className="font-semibold text-blue-600"></span ><span className='flex items-center text-blue-700 font-semibold gap-1 text-sm'><FaLocationDot/> Nairobi, Kenya</span></p>
+            <p className='font-bold text-sm italic text-blue-500 mt-3'>Links</p>
             <p className='flex items-center'><span className="font-semibold text-blue-600 "></span><a href="https://github.com/Torusic" className='flex items-center text-blue-700 font-semibold gap-1 text-sm'><FaGithub />github </a> </p>
-            <p className='flex items-center'><span className="font-semibold text-blue-600"></span><a href="https://www.linkedin.com/in/simon-muchuku-75b3082b6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BlLXZulhBQl6joq46Gl8Btw%3D%3D" className='flex items-center text-blue-700 font-semibold gap-1 text-sm'><CiLinkedin size={26} /> LinkedIn</a></p>
+            <p className='flex items-center'><span className="font-semibold text-blue-600"></span><a href="https://www.linkedin.com/in/simon-muchuku-75b3082b6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BlLXZulhBQl6joq46Gl8Btw%3D%3D" className='flex items-center text-blue-700 font-semibold gap-1 text-sm'><CiLinkedin size={26} /> linkedIn</a></p>
           </div>
 
           {/* Contact Form */}
