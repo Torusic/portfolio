@@ -3,7 +3,7 @@ import React from 'react'
 function About() {
   return (
     <section className="min-h-screen bg-white flex items-center">
-      <div className="max-w-5xl mx-auto  lg:px-12">
+      <div className="max-w-5xl mx-auto px-6 lg:px-12">
         
         <h2 className="text-3xl lg:text-4xl font-bold text-blue-600 mb-4">
           About Me
