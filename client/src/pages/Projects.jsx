@@ -45,7 +45,7 @@ function Projects() {
 
 function Skill({ icon, name }) {
   return (
-    <div className="flex flex-col items-center gap-2 p-4 rounded-lg hover:shadow-md transition ">
+    <div className="flex flex-col items-center gap-2 p-4 cursor-pointer rounded-lg hover:shadow-md transition ">
       {icon}
       <p className="text-sm font-semibold text-gray-700">{name}</p>
     </div>
