@@ -10,7 +10,7 @@ function Projects() {
         <div className=' py-3 '>
           <h2 className='text-3xl font-bold text-blue-500 mb-2'>Projects</h2>
           <div className="w-20 h-1 bg-blue-500 mb-8"></div>
-          <p className='text-2xl font-semibold text-red-500 animate-pulse italic mb-2'>To be updated soon.</p>
+          <p className='text-2xl font-semibold text-red-500  italic mb-2'>To be updated soon.</p>
 
         </div>
 

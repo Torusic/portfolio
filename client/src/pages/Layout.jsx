@@ -6,7 +6,7 @@ import { Link, Outlet } from 'react-router-dom';
 
 function Layout() {
   return (
-    <section className='bg-blue-50    w-full'>
+    <section className='bg-blue-50 z-50   w-full'>
       {/* Header stays here */}
       <header className='flex justify-between sticky  top-0 p-2 lg:p-3 h-15 bg-blue-100 items-center'>
         <img src={logo} width={120} height={70} alt="Logo"/>
