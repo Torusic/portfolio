@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaArrowRight, FaGithub, FaLocationDot } from 'react-icons/fa6'
+import { FaArrowRight, FaGithub, FaLocationDot, FaWhatsapp } from 'react-icons/fa6'
 import { CiLinkedin, CiPhone } from "react-icons/ci";
 import { MdOutlineMailOutline } from "react-icons/md";
 
@@ -25,11 +25,13 @@ function Contacts() {
           {/* Contact Info */}
           <div className="space-y-4 text-gray-700">
            <p className='font-bold text-sm italic text-blue-500 mt-3'>Info</p>
-            <p><span className="font-semibold text-blue-600"></span><span className='flex items-center text-blue-700 font-semibold gap-1 text-sm'><MdOutlineMailOutline />smuchuku7@gmail.com</span> </p>
+            
            <p ><span className="font-semibold text-blue-600"></span ><span className='flex items-center text-blue-700 font-semibold gap-1 text-sm'><CiPhone /> +254 795 629 534</span></p>
             <p ><span className="font-semibold text-blue-600"></span ><span className='flex items-center text-blue-700 font-semibold gap-1 text-sm'><FaLocationDot/> Nairobi, Kenya</span></p>
             <p className='font-bold text-sm italic text-blue-500 mt-3'>Links</p>
-            <p className='flex items-center'><span className="font-semibold text-blue-600 "></span><a href="https://github.com/Torusic" className='flex items-center text-blue-700 font-semibold gap-1 text-sm'><FaGithub />github </a> </p>
+            <p className='flex items-center'><a  href="https://wa.me/254795629534"target="_blank"rel="noopener noreferrer"className='flex items-center text-blue-700 font-semibold gap-1 text-sm hover:underline'><FaWhatsapp size={26}/> WhatsApp</a></p>
+            <p><span className="font-semibold text-blue-600"></span><a href="mailto:smuchuku7@gmail.com"className='flex items-center text-blue-700 font-semibold gap-1 text-sm hover:underline'><MdOutlineMailOutline size={26} /> smuchuku7@gmail.com</a></p>
+            <p className='flex items-center'><span className="font-semibold text-blue-600 "></span><a href="https://github.com/Torusic" className='flex items-center text-blue-700 font-semibold gap-1 text-sm'><FaGithub size={26} />github </a> </p>
             <p className='flex items-center'><span className="font-semibold text-blue-600"></span><a href="https://www.linkedin.com/in/simon-muchuku-75b3082b6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BlLXZulhBQl6joq46Gl8Btw%3D%3D" className='flex items-center text-blue-700 font-semibold gap-1 text-sm'><CiLinkedin size={26} /> linkedIn</a></p>
           </div>
 
