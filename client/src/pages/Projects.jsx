@@ -47,12 +47,12 @@ function Projects() {
           </h3>
 
           {/* Image Slider */}
-          <div className="relative w-full max-w-3xl mx-auto mb-6">
+          <div className="relative w-full lg:flex-col-2 max-w-3xl mx-auto mb-6">
 
             <img
               src={images[currentIndex]}
               alt="Project Screenshot"
-              className="w-full h-40 object-cover rounded-xl shadow-lg transition duration-500"
+              className="w-full h-40 lg:h-80 object-cover rounded-xl shadow-lg transition duration-500"
             />
 
             {/* Left Arrow */}
