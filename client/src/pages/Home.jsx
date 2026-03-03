@@ -34,9 +34,9 @@ function Home() {
                   2000,
                   "Full Stack Developer",
                   2000,
-                  "IoT & Software Engineer",
+                  "Software Engineer",
                   2000,
-                  "Problem Solver",
+                  "ESP32 IoT Enthusiast",
                   2000
                 ]}
                 wrapper="span"
