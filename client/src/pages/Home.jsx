@@ -24,13 +24,13 @@ function Home() {
             Software Engineer | Full Stack Developer | Mobile App Developer
           </h2>
 
-          <p className="mt-6 text-gray-600 text-base leading-relaxed">
+          <p className="mt-6 text-gray-600  leading-relaxed text-sm">
             I am a passionate Computer Science student and software developer with strong experience in 
-            building scalable web and mobile applications using modern technologies...
+            building scalable web and mobile applications using modern technologies.
           </p>
 
-          <p className="mt-4 text-gray-600 text-base leading-relaxed">
-            I focus on creating clean, efficient, and secure systems that solve real-world problems...
+          <p className="mt-4 text-gray-600 text-sm leading-relaxed">
+            I focus on creating clean, efficient, and secure systems that solve real-world problems.
           </p>
 
           <div className="mt-6 flex gap-4">
