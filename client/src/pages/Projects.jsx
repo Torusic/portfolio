@@ -52,7 +52,7 @@ function Projects() {
             <img
               src={images[currentIndex]}
               alt="Project Screenshot"
-              className="w-full h-40 lg:h-80 object-cover rounded-xl shadow-lg transition duration-500"
+              className="w-full h-50 lg:h-80 object-cover rounded-xl shadow-lg transition duration-500"
             />
 
             {/* Left Arrow */}
