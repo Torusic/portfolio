@@ -30,7 +30,7 @@ function Home() {
             <span className="text-blue-600">
               <TypeAnimation
                 sequence={[
-                  "Simon Muchuku Njuguna",
+                  "Simon Muchuku",
                   2000,
                   "Full Stack Developer",
                   2000,
