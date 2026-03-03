@@ -19,7 +19,7 @@ function About() {
 
         {/* Divider */}
         <motion.div
-          className="w-20 h-1 bg-blue-500 mb-6"
+          className="w-20 h-1  bg-blue-500 mb-6"
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -35,7 +35,7 @@ function About() {
         ].map((text, index) => (
           <motion.p
             key={index}
-            className="text-gray-600 leading-relaxed mb-4"
+            className="text-gray-600 rounded-lg border-l-4 text-sm text-basic border-gray-400 bg-white shadow-md p-4 my-2 leading-relaxed mb-4"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}

@@ -8,24 +8,22 @@ import { CgProfile } from "react-icons/cg";
 import { motion } from 'framer-motion';
 
 function Layout() {
-  const location = useLocation(); // to highlight active link
+  const location = useLocation(); 
 
   const navItems = [
-    { to: "/", icon: <IoHomeSharp size={22} />, label: "Home" },
-    { to: "/about", icon: <CgProfile size={22} />, label: "About" },
-    { to: "/project", icon: <MdWork size={22} />, label: "Projects" },
-    { to: "/contact", icon: <LuMessageCircleMore size={22} />, label: "Contact" },
+    { to: "/", icon: <IoHomeSharp size={22} className='lg:hidden' />, label: "Home"  },
+    { to: "/about", icon: <CgProfile size={22} className='lg:hidden' />, label: "About" },
+    { to: "/project", icon: <MdWork size={22} className='lg:hidden'/>, label: "Projects" },
+    { to: "/contact", icon: <LuMessageCircleMore size={22} className='lg:hidden' />, label: "Contact" },
   ];
 
   return (
     <section className='bg-blue-50 z-50 w-full'>
 
       {/* Header */}
-      <motion.header
+      <header
         className='flex justify-between sticky top-0 p-2 lg:p-3 h-15 bg-blue-100 items-center shadow-md'
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8 }}
+  
       >
         <img src={logo} width={120} height={70} alt="Logo" className="cursor-pointer" />
 
@@ -37,8 +35,13 @@ function Layout() {
               whileTap={{ scale: 0.9 }}
               className={`relative`}
             >
-              <Link to={item.to}>
+              <Link to={item.to} >
                 {item.icon}
+              
+              </Link>
+               <Link to={item.to} className='hidden lg:block' >
+                
+                {item.label }
               </Link>
               {/* Active Indicator */}
               {location.pathname === item.to && (
@@ -51,7 +54,7 @@ function Layout() {
             </motion.div>
           ))}
         </div>
-      </motion.header>
+      </header>
 
       {/* Main content */}
       <main className='px-3 py-1'>

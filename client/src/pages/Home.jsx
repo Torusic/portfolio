@@ -6,14 +6,14 @@ import { motion } from 'framer-motion'
 function Home() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex items-center">
-      <div className="max-w-6xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center">
-
-        {/* Text Section */}
-        <motion.div
+     <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-        >
+         className="max-w-6xl bg-white shadow-md rounded-2xl border-l-4 border-blue-500 py-4 mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center">
+
+        {/* Text Section */}
+        <div>
           <h1 className="text-4xl lg:text-5xl font-extrabold text-blue-600 leading-tight">
             Hello, I'm <span className="text-blue-800">Simon Muchuku Njuguna</span>
           </h1>
@@ -41,7 +41,7 @@ function Home() {
               Contact Me
             </a>
           </div>
-        </motion.div>
+        </div>
 
         {/* Image Section */}
         <motion.div
@@ -55,7 +55,7 @@ function Home() {
           </div>
         </motion.div>
 
-      </div>
+     </motion.div>
     </section>
   )
 }

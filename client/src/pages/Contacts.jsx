@@ -30,7 +30,7 @@ function Contacts() {
         ></motion.div>
 
         <motion.p
-          className="text-gray-600 mb-8 max-w-9xl"
+          className="text-gray-600 mb-8 bg-white rounded-lg border-l-4 border-blue-500 p-4 text-sm max-w-9xl"
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -45,7 +45,7 @@ function Contacts() {
 
           {/* Contact Info */}
           <motion.div
-            className="space-y-4 text-gray-700"
+            className="space-y-4 text-gray-700 text-sm"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
