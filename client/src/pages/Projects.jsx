@@ -89,7 +89,7 @@ function Projects() {
               transition={{ duration: 0.5 }}
               className="mt-6 bg-white p-6 rounded-xl shadow border-l-4 border-blue-400"
             >
-              <p className="text-gray-700 mb-4 leading-relaxed">
+              <p className="text-gray-700 mb-4 leading-relaxed text-sm">
                 Smart Rent and Utilities System is a full-stack rental management
                 platform integrated with ESP32 IoT automation and M-Pesa payment
                 processing. The system allows landlords to monitor tenant payments,
