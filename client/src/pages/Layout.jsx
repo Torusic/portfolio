@@ -22,7 +22,7 @@ function Layout() {
 
       {/* Header */}
       <header
-        className='flex justify-between sticky top-0 p-2 z-50 lg:p-3 h-15 bg-blue-100 items-center shadow-md'
+        className='flex justify-between sticky top-0 p-2 z-50 lg:p-3 h-15 bg-blue-100 items-center '
   
       >
         <img src={logo} width={120} height={70} alt="Logo" className="cursor-pointer" />
