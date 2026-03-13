@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FaNode, FaPython, FaReact } from "react-icons/fa6"
-import { TbBrandReactNative } from "react-icons/tb"
+import { TbBrandCpp, TbBrandReactNative } from "react-icons/tb"
 import { SiExpress, SiMongodb, SiMysql } from "react-icons/si"
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 import { motion } from 'framer-motion'
@@ -9,6 +9,7 @@ import img1 from "../assets/Screenshot (77).png"
 import img2 from "../assets/Screenshot (79).png"
 import img3 from "../assets/Screenshot (80).png"
 import img4 from "../assets/Screenshot (81).png"
+import img5 from "../assets/esp.png"
 import demo1 from "../assets/demo.mp4"
 
 function Projects() {
@@ -141,13 +142,30 @@ function Projects() {
           </h3>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-white p-6 rounded-xl border-l-4 border-blue-400 shadow">
+
             <Skill icon={<FaReact size={40} className="text-blue-500" />} name="React.js" />
             <Skill icon={<FaNode size={40} className="text-green-600" />} name="Node.js" />
             <Skill icon={<SiExpress size={40} className="text-gray-700" />} name="Express.js" />
             <Skill icon={<SiMongodb size={40} className="text-green-500" />} name="MongoDB" />
           </div>
         </motion.div>
+        {/**hardware */}
+        <motion.div>
+        <h3 className='text-lg font-semibold text-blue-500 mb-4 mt-2'>IoT (ESP32)</h3>
 
+        <div className='grid grid-cols-2  md:grid-cols-4 gap-6 bg-white p-6 rounded-xl border-l-4 border-blue-400 shadow'>
+            <Skill icon={<TbBrandCpp size={40} className="text-blue-500" />} name="C++" />
+            <div className='grid'>
+               <img src={img5} width={80} height={80} alt=""className="text-blue-500" />
+               <p className='text-sm font-semibold text-gray-700'>ESP32</p>
+
+            </div>
+           
+          
+        </div>
+
+
+        </motion.div>
         {/* Other Technologies */}
         <motion.div className="mt-10">
           <h3 className="text-lg font-semibold text-blue-500 mb-4">
