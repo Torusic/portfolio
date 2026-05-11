@@ -123,7 +123,7 @@ function Projects() {
             onClick={() => setShowRentMore(!showRentMore)}
             className="px-5 py-2 bg-blue-500 text-white rounded-lg text-sm hover:bg-blue-600 transition duration-300"
           >
-            {showRentMore ? "View Less" : "View More about this project"}
+            {showRentMore ? "View Less" : "View a demo video"}
           </button>
 
           {/* Expanded Content */}
@@ -205,7 +205,7 @@ function Projects() {
             onClick={() => setShowLoanMore(!showLoanMore)}
             className="px-5 py-2 bg-blue-500 text-white rounded-lg text-sm hover:bg-blue-600 transition duration-300"
           >
-            {showLoanMore ? "View Less" : "View More about this project"}
+            {showLoanMore ? "View Less" : "View a demo video "}
           </button>
 
           {/* Expanded Loan Content */}
@@ -296,7 +296,7 @@ function Projects() {
         <motion.div>
 
           <h3 className='text-lg font-semibold text-blue-500 mb-4 mt-6'>
-            IoT (ESP32)
+            IoT (ESP32) prototype level
           </h3>
 
           <div className='grid grid-cols-2 md:grid-cols-4 gap-6 bg-white p-6 rounded-xl border-l-4 border-blue-400 shadow'>
