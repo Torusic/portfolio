@@ -40,7 +40,7 @@ function About() {
       id="about"
       className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 py-24"
     >
-      <div className="max-w-6xl mx-auto px-6 lg:px-12">
+      <div className="max-w-6xl mx-auto px-3 lg:px-12">
         {/* Header */}
         <motion.div
           className="text-center mb-16"

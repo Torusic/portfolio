@@ -51,7 +51,7 @@ function Projects() {
 
   const SectionHeader = () => (
     <div className="text-center mb-16">
-      <span className="px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold">
+      <span className="px-1 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold">
         Portfolio
       </span>
 
@@ -68,7 +68,7 @@ function Projects() {
 
   return (
     <section className="bg-gradient-to-b from-slate-50 via-white to-slate-50 py-24">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-3">
 
         <SectionHeader />
 
