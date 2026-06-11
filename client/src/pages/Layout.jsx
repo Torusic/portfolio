@@ -15,8 +15,8 @@ function Layout() {
   const navItems = [
     { to: "/", icon: <IoHomeSharp size={22} className='lg:hidden' />, label: "Home"  },
     { to: "/skill", icon: <FaTools size={22} className='lg:hidden'/>, label: "Skill" },
-    { to: "/about", icon: <CgProfile size={22} className='lg:hidden' />, label: "About" },
     { to: "/project", icon: <MdWork size={22} className='lg:hidden'/>, label: "Projects" },
+    { to: "/about", icon: <CgProfile size={22} className='lg:hidden' />, label: "About" },
     { to: "/contact", icon: <LuMessageCircleMore size={22} className='lg:hidden' />, label: "Contact" },
   ];
 

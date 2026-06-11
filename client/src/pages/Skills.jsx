@@ -1,138 +1,114 @@
-import React, { useState } from 'react'
-import { FaNode, FaPython, FaReact } from "react-icons/fa6"
-import { TbBrandCpp, TbBrandReactNative } from "react-icons/tb"
-import { SiExpress, SiMongodb, SiMysql, SiPostgresql } from "react-icons/si"
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
-import { motion } from 'framer-motion'
-import img5 from '../assets/esp.png'
+import React from "react";
+import { motion } from "framer-motion";
+import { FaNode, FaPython, FaReact } from "react-icons/fa6";
+import { SiExpress, SiMongodb, SiPostgresql } from "react-icons/si";
+import { TbBrandCpp } from "react-icons/tb";
+import img5 from "../assets/esp.png";
 
 function Skills() {
-  return (
-    <div>
-         <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="mb-6 mt-16"
-        >
-
-          <h2 className="text-3xl font-bold text-blue-600 mb-2">
-            Skills & Technologies
-          </h2>
-
-          <div className="w-20 h-1 bg-blue-500 mb-8"></div>
-
-        </motion.div>
-
-        {/* Full Stack */}
-        <motion.div>
-
-          <h3 className="text-xs font-semibold text-blue-500 mb-4">
-            Full Stack Development - MERN
-          </h3>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-white p-6 rounded-xl border-l-4 border-blue-400 shadow">
-
-            <Skill
-              icon={<FaReact size={40} className="text-blue-500" />}
-              name="React.js"
-            />
-
-            <Skill
-              icon={<FaNode size={40} className="text-green-600" />}
-              name="Node.js"
-            />
-
-            <Skill
-              icon={<SiExpress size={40} className="text-gray-700" />}
-              name="Express.js"
-            />
-
-            <Skill
-              icon={<SiMongodb size={40} className="text-green-500" />}
-              name="MongoDB"
-            />
-
-          </div>
-
-        </motion.div>
-         {/* Other Technologies */}
-        <motion.div className="mt-10">
-
-          <h3 className="text-sm font-semibold text-blue-500 mb-4">
-            Other Full Stack Technologies - React, DRF & Postgresql
-          </h3>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-white p-6 rounded-xl border-l-4 border-blue-400 shadow">
-
-            <Skill
-              icon={<FaReact size={40} className="text-blue-500" />}
-              name="React"
-            />
-
-            <Skill
-              icon={<FaPython size={40} className="text-yellow-500" />}
-              name="Django Rest Framework (python backend)"
-            />
-
-            <Skill
-              icon={<SiPostgresql size={40} className="text-blue-600" />}
-              name="Postgresql"
-            />
-
-          </div>
-
-        </motion.div>
-
-        {/* IoT */}
-        <motion.div>
-
-          <h3 className='text-lg font-semibold text-blue-500 mb-4 mt-6'>
-            IoT (ESP32) prototype level
-          </h3>
-
-          <div className='grid grid-cols-2 md:grid-cols-4 gap-6 bg-white p-6 rounded-xl border-l-4 border-blue-400 shadow'>
-
-            <Skill
-              icon={<TbBrandCpp size={40} className="text-blue-500" />}
-              name="C++"
-            />
-
-            <div className='flex flex-col items-center gap-2'>
-
-              <img
-                src={img5}
-                width={80}
-                height={80}
-                alt="ESP32"
-              />
-
-              <p className='text-sm font-semibold text-gray-700'>
-                ESP32
-              </p>
-
-            </div>
-
-          </div>
-
-        </motion.div>
-
-    </div>
-  )
-}
-function Skill({ icon, name }) {
-  return (
+  const SkillCard = ({ icon, name }) => (
     <motion.div
-      className="flex flex-col items-center gap-2 p-4 cursor-pointer rounded-lg hover:shadow-md transition-transform duration-300 hover:scale-105"
+      className="flex flex-col items-center justify-center p-5 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+      whileHover={{ scale: 1.05 }}
     >
-      {icon}
-
-      <p className="text-sm font-semibold text-gray-700">
+      <div className="text-3xl">{icon}</div>
+      <p className="mt-2 text-sm font-medium text-slate-700 text-center">
         {name}
       </p>
     </motion.div>
-  )
+  );
+
+  const Section = ({ title, subtitle, children }) => (
+    <div className="mb-14">
+      <div className="mb-6">
+        <h3 className="text-lg font-semibold text-blue-600">{title}</h3>
+        {subtitle && (
+          <p className="text-sm text-slate-500 mt-1">{subtitle}</p>
+        )}
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        {children}
+      </div>
+    </div>
+  );
+
+  return (
+    <section className="bg-gradient-to-b from-slate-50 via-white to-slate-50 py-24">
+      <div className="max-w-6xl mx-auto px-6 lg:px-12">
+
+        {/* HEADER */}
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <span className="px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold">
+            Skills & Technologies
+          </span>
+
+          <h2 className="mt-6 text-5xl font-bold text-slate-900">
+            My Tech Stack
+          </h2>
+
+          <p className="mt-5 text-slate-600 max-w-2xl mx-auto">
+            A collection of technologies I use to build scalable web applications,
+            APIs, and IoT systems.
+          </p>
+        </motion.div>
+
+        {/* FULL STACK MERN */}
+        <Section
+          title="Full Stack Development"
+          subtitle="MERN Stack (Modern Web Applications)"
+        >
+          <SkillCard icon={<FaReact className="text-blue-500" />} name="React.js" />
+          <SkillCard icon={<FaNode className="text-green-600" />} name="Node.js" />
+          <SkillCard icon={<SiExpress className="text-slate-700" />} name="Express.js" />
+          <SkillCard icon={<SiMongodb className="text-green-500" />} name="MongoDB" />
+        </Section>
+
+        {/* BACKEND + DATABASE */}
+        <Section
+          title="Backend & Databases"
+          subtitle="APIs, Data Management & Server Logic"
+        >
+          <SkillCard icon={<FaPython className="text-yellow-500" />} name="Django REST Framework" />
+          <SkillCard icon={<SiPostgresql className="text-blue-600" />} name="PostgreSQL" />
+          <SkillCard icon={<FaReact className="text-blue-400" />} name="React (Advanced UI)" />
+        </Section>
+
+        {/* IOT */}
+        <Section
+          title="IoT & Embedded Systems"
+          subtitle="Hardware + Software Integration"
+        >
+          <SkillCard icon={<TbBrandCpp className="text-blue-500" />} name="C++" />
+
+          <motion.div
+            className="flex flex-col items-center justify-center p-5 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300"
+            whileHover={{ scale: 1.05 }}
+          >
+            <img src={img5} alt="ESP32" className="w-16 h-16 object-contain" />
+            <p className="mt-2 text-sm font-medium text-slate-700">
+              ESP32
+            </p>
+          </motion.div>
+        </Section>
+
+        {/* FOOTER NOTE */}
+        <motion.p
+          className="text-center text-slate-500 italic mt-10"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          Continuously learning new technologies to build better systems.
+        </motion.p>
+
+      </div>
+    </section>
+  );
 }
 
-export default Skills
+export default Skills;
