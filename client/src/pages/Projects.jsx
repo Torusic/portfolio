@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaNode, FaPython, FaReact } from "react-icons/fa6"
 import { TbBrandCpp, TbBrandReactNative } from "react-icons/tb"
-import { SiExpress, SiMongodb, SiMysql } from "react-icons/si"
+import { SiExpress, SiMongodb, SiMysql, SiPostgresql } from "react-icons/si"
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 import { motion } from 'framer-motion'
 
@@ -263,7 +263,7 @@ function Projects() {
         <motion.div>
 
           <h3 className="text-lg font-semibold text-blue-500 mb-4">
-            Full Stack Development
+            Full Stack Development - MERN
           </h3>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-white p-6 rounded-xl border-l-4 border-blue-400 shadow">
@@ -286,6 +286,33 @@ function Projects() {
             <Skill
               icon={<SiMongodb size={40} className="text-green-500" />}
               name="MongoDB"
+            />
+
+          </div>
+
+        </motion.div>
+         {/* Other Technologies */}
+        <motion.div className="mt-10">
+
+          <h3 className="text-lg font-semibold text-blue-500 mb-4">
+            Other Full Stack Technologies - React, DRF & Postgresql
+          </h3>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-white p-6 rounded-xl border-l-4 border-blue-400 shadow">
+
+            <Skill
+              icon={<FaReact size={40} className="text-blue-500" />}
+              name="React"
+            />
+
+            <Skill
+              icon={<FaPython size={40} className="text-yellow-500" />}
+              name="Django Rest Framework (python backend)"
+            />
+
+            <Skill
+              icon={<SiPostgresql size={40} className="text-blue-600" />}
+              name="Postgresql"
             />
 
           </div>
@@ -325,33 +352,7 @@ function Projects() {
 
         </motion.div>
 
-        {/* Other Technologies */}
-        <motion.div className="mt-10">
-
-          <h3 className="text-lg font-semibold text-blue-500 mb-4">
-            Other Technologies
-          </h3>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-white p-6 rounded-xl border-l-4 border-blue-400 shadow">
-
-            <Skill
-              icon={<TbBrandReactNative size={40} className="text-blue-500" />}
-              name="React Native"
-            />
-
-            <Skill
-              icon={<FaPython size={40} className="text-yellow-500" />}
-              name="Python"
-            />
-
-            <Skill
-              icon={<SiMysql size={40} className="text-blue-600" />}
-              name="MySQL"
-            />
-
-          </div>
-
-        </motion.div>
+       
 
       </div>
     </section>
