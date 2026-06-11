@@ -6,12 +6,15 @@ import { MdWork } from "react-icons/md";
 import { LuMessageCircleMore } from "react-icons/lu";
 import { CgProfile } from "react-icons/cg";
 import { motion } from 'framer-motion';
+import { FaToolbox } from 'react-icons/fa6';
+import { FaTools } from 'react-icons/fa';
 
 function Layout() {
   const location = useLocation(); 
 
   const navItems = [
     { to: "/", icon: <IoHomeSharp size={22} className='lg:hidden' />, label: "Home"  },
+    { to: "/skill", icon: <FaTools size={22} className='lg:hidden'/>, label: "Skill" },
     { to: "/about", icon: <CgProfile size={22} className='lg:hidden' />, label: "About" },
     { to: "/project", icon: <MdWork size={22} className='lg:hidden'/>, label: "Projects" },
     { to: "/contact", icon: <LuMessageCircleMore size={22} className='lg:hidden' />, label: "Contact" },
